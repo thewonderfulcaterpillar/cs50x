@@ -1,0 +1,8 @@
+-- If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+SELECT AVG(energy,valence,danceability) AS avg_score FROM songs ORDER BY listen_quantity DESC LIMIT 100;
+
+--Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+If the reader listens to 2 extremes of music, like 0 aura vs 100 aura, then the code erroneously calculates the average which is 50, which
+does not represent the person's style.
+
+Instead, can calculate the mode instead of the average. or provide few ranges.

@@ -1,0 +1,2 @@
+merge sort and insert sort will take appx the same time for reversed and non-reveresed text files but merge sort will be much faster than insert sort
+bubble sort will take around insert sort time for reversed texts but take much faster for sorted texts
